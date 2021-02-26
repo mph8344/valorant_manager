@@ -1,0 +1,49 @@
+{
+  "name": "tutorial-bundle",
+  "version": "0.0.0",
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "score",
+        "title": "Score",
+        "width": 2,
+        "file": "score.html",
+        "headerColor": "#525F78"
+      },
+      {
+        "name": "teamscores",
+        "title": "Team Scores",
+        "width": 2,
+        "file": "teamscores.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "scoreboard.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "lowerthird.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "dependencies": {
+    "gsap": "^3.0.1",
+    "sass": "^1.32.8"
+  }
+}

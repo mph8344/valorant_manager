@@ -1,0 +1,109 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	background: black;
+}
+
+#scoreboard {
+	display: flex;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -82px;
+}
+
+.scores {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;
+	width: 15px;
+	height: 100px;
+}
+
+.scorebox {
+	background-color: lightgrey;
+	width: 30px;
+	height: 30px;
+}
+
+.scores#leftScore {
+	align-self: flex-end;
+}
+.scores#rightScore {
+	align-self: flex-start;
+}
+
+#team1 {
+	background: #ff7442;
+	border-right: 4px solid white;
+	border-radius: 10% 0 0 10%;
+}
+
+#team2 {
+	background: #3c3cff;
+	border-radius: 0 10% 10% 0;
+}
+
+
+.flexcontainer {
+	
+	margin: auto;
+	margin-top: 62.5px;
+	display: flex;
+	width: 920px;
+  
+  }
+
+  .flexcontainer .centerbox {
+	width: 14%;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	color: aliceblue;
+  }
+
+  .flexcontainer #center{
+	
+	display: flex;
+	justify-content: center;
+	width: 280px;
+	height: 160px;
+	background-color: white;
+	
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 10% 100%, 0 85%);
+  }
+
+
+
+  .flexcontainer #leftOut {
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+  }
+
+  .flexcontainer #rightOut {
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+  }
+
+  .flexcontainer img {
+	height: 100px;
+  }
+
+  .flexcontainer .newbox {
+	
+	width: 320px;
+	height: 136px;
+	font-size: 2.5vw;
+	display: none;
+	filter: hue-rotate(60) ;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+
+  }
+
+  .innerText {
+	  position: absolute;
+	  align-self: center;
+  }
