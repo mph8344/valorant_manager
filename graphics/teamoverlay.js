@@ -12,12 +12,12 @@ const team2Score = document.getElementById('rightScore')
 const team1Rep = nodecg.Replicant('team1score');
 const team2Rep = nodecg.Replicant('team2score');
 
+const team1SideRep = nodecg.Replicant('team1Side');
+const team2SideRep = nodecg.Replicant('team2Side');
 
 nodecg.listenFor('CreateTeams', (newVal) => {
 	team1.innerHTML = newVal.team1Name;
 	team2.innerHTML = newVal.team2Name;
-	team1Side.innerHTML = newVal.team1Side;
-	team2Side.innerHTML = newVal.team2Side;
 
 })
 
@@ -28,4 +28,12 @@ team1Rep.on('change', (newVal) => {
 
 team2Rep.on('change', (newVal) => {
 	team2Score.innerHTML = newVal;
+})
+
+team1SideRep.on('change', (newVal) => {
+	team1Side.innerHTML = newVal;
+})
+
+team2SideRep.on('change', (newVal) => {
+	team2Side.innerHTML = newVal;
 })
