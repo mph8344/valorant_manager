@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Proxima-Nova;
+    src: url('fonts/proxima.otf') format('opentype');
+}
+
 body {
 	font-family: 'Play', sans-serif;
 	font-weight: bold;
@@ -59,6 +64,8 @@ body {
 }
 
 .teamText {
+    font-family: 'Proxima-Nova';
+    font-weight: bold;
     padding-top: 5px;
 }
 
