@@ -1,5 +1,5 @@
 {
-  "name": "tutorial-bundle",
+  "name": "valorant_manager",
   "version": "0.0.0",
   "files": [
     "dashboard",
@@ -22,21 +22,16 @@
         "headerColor": "#525F78"
       },
       {
-        "name": "teamscores",
-        "title": "Team Scores",
+        "name": "teams",
+        "title": "Teams",
         "width": 2,
-        "file": "teamscores.html",
+        "file": "teams.html",
         "headerColor": "#525F78"
       }
     ],
     "graphics": [
       {
-        "file": "scoreboard.html",
-        "width": 1920,
-        "height": 1080
-      },
-      {
-        "file": "lowerthird.html",
+        "file": "teamoverlay.html",
         "width": 1920,
         "height": 1080
       }

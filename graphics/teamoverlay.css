@@ -1,0 +1,80 @@
+body {
+	font-family: 'Play', sans-serif;
+	font-weight: bold;
+    font-size: 24px;
+	background: white;
+    color: white;
+}
+
+.team {
+    position: absolute;
+    width: 155px;
+    height: 38px;
+    top: 32px;
+    
+}
+
+.score {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 32px;
+}
+
+.side {
+    font-size: 16px;
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    top: 32px;
+    padding-top: 9px;
+   
+}
+
+#leftSide {
+    left: 780px;
+    color: #FF5500;
+    text-align: left;
+}
+#rightSide {
+    text-align: right;
+    right: 780px;
+    color: black;
+}
+
+
+
+#leftScore {
+    left: 815px;
+    padding-top: 4px;
+    text-align: right;
+    
+    color: #FF5500;
+}
+#rightScore {
+    right: 815px;
+    padding-top: 4px;
+    text-align: left;
+    color: black;
+}
+
+.teamText {
+    padding-top: 5px;
+}
+
+#leftText {
+    padding-left: 5px;
+}
+
+#rightText {
+    text-align: right;
+    padding-right: 5px;
+}
+
+#rightTeam {
+    right: 265px;
+}
+
+#leftTeam {
+    left: 265px;
+}

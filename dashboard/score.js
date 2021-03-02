@@ -1,26 +1,30 @@
 
-const color1 = document.getElementById('team1Color')
-const color2 = document.getElementById('team2Color')
-
-const font1 = document.getElementById('team1Font')
-const font2 = document.getElementById('team2Font')
-
-const team1Input = document.getElementById('team1Name')
-const team2Input = document.getElementById('team2Name')
-
-const team1Rep = nodecg.Replicant('team1', {defaultValue: 0});
-const team2Rep = nodecg.Replicant('team2', {defaultValue: 0});
+const team1Rep = nodecg.Replicant('team1score', {defaultValue: 0});
+const team2Rep = nodecg.Replicant('team2score', {defaultValue: 0});
 
 
-function update() {
-	const data = {
-		team1Name: team1Input.value, 
-		team2Name: team2Input.value, 
-		team1Color: color1.value,
-		team2Color: color2.value,
-		team1Font: font1.value,
-		team2Font: font2.value
-
+function addTeam1() {
+	if (team1Rep.value < 13) {
+		team1Rep.value++;
 	}
-	nodecg.sendMessage('EditTeam', data);
+}
+
+function subTeam1() {
+	if (team1Rep.value > 0) {
+		team1Rep.value--;
+	}
+	
+}
+
+function addTeam2() {
+	if (team2Rep.value < 13) {
+		team2Rep.value++;
+	}
+}
+
+function subTeam2() {
+	if (team2Rep.value > 0) {
+		team2Rep.value--;
+	}
+	
 }
