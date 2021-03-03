@@ -28,3 +28,10 @@ function swapSides() {
 	team2Rep.value = temp;
 
 }
+
+function reset() {
+	team1Rep = nodecg.Replicant('team1Side', {defaultValue: 'DEF'});
+	team1Rep.value = 'DEF'
+	team2Rep = nodecg.Replicant('team2Side', {defaultValue: 'ATK'});
+	team1Rep.value = 'ATK'
+}

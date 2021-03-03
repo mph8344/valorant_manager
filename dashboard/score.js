@@ -35,7 +35,10 @@ function subTeam2() {
 }
 
 function resetScore() {
+
 	team1Rep.value = 0;
 	team2Rep.value = 0;
+	team1Rep = nodecg.Replicant('team1score', {defaultValue: 0});
+	team2Rep = nodecg.Replicant('team2score', {defaultValue: 0});
 	totalScore.value = 0;
 }
