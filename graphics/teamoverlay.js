@@ -22,18 +22,23 @@ nodecg.listenFor('CreateTeams', (newVal) => {
 })
 
 
-team1Rep.on('change', (newVal) => {
-	team1Score.innerHTML = newVal;
-})
+NodeCG.waitForReplicants(team1Rep, team2Rep, team1SideRep, team2SideRep).then(() => {
 
-team2Rep.on('change', (newVal) => {
-	team2Score.innerHTML = newVal;
-})
+	team1Rep.on('change', (newVal) => {
+		team1Score.innerHTML = newVal;
+	})
 
-team1SideRep.on('change', (newVal) => {
-	team1Side.innerHTML = newVal;
-})
+	team2Rep.on('change', (newVal) => {
+		team2Score.innerHTML = newVal;
+	})
 
-team2SideRep.on('change', (newVal) => {
-	team2Side.innerHTML = newVal;
-})
+	team1SideRep.on('change', (newVal) => {
+		team1Side.innerHTML = newVal;
+	})
+
+	team2SideRep.on('change', (newVal) => {
+		team2Side.innerHTML = newVal;
+	})
+
+
+});
