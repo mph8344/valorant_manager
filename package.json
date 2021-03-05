@@ -27,6 +27,13 @@
         "width": 2,
         "file": "teams.html",
         "headerColor": "#525F78"
+      },
+      {
+        "name": "lowerthird",
+        "title": "Lower Third",
+        "width": 2,
+        "file": "name.html",
+        "headerColor": "#525F78"
       }
     ],
     "graphics": [
@@ -34,11 +41,16 @@
         "file": "teamoverlay.html",
         "width": 1920,
         "height": 1080
+      },
+      {
+        "file": "lowerthird.html",
+        "width": 1920,
+        "height": 1080
       }
     ]
   },
   "dependencies": {
-    "gsap": "^3.0.1",
+    "gsap": "^3.6.0",
     "sass": "^1.32.8"
   }
 }

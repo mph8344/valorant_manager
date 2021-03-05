@@ -1,36 +1,46 @@
+@font-face {
+	font-family: 'Torque';
+	src: url('./fonts/Torque_Bold.ttf') format('truetype');
+}
+
 body {
-	font-family: Staatliches, sans-serif;
+	font-family: 'Torque';
+	font-weight: bolder;
 	background: red;
 }
 
 #nameplate {
 	position: absolute;
+	width: auto;
 	top: 800px;
 	left: 175px;
+	transform: translate(0px, 0px);
+	
 
 	display: flex;
 	flex-direction: column;
-
+	
 	overflow: hidden;
 }
 
 .text {
-	background: white;
+	color: #EBEFF3;
 	width: fit-content;
-	padding: 0 8px 0 15px;
-
+	padding: 0 15px 0 15px;
 	overflow: hidden;
 	white-space: nowrap;
+	
 }
 
+
 #name {
+	
 	font-size: 75px;
-	margin-bottom: 3px;
-	letter-spacing: 7px;
+	letter-spacing: 1px;
 	font-weight: bold;
 }
 
 #twitter {
 	font-size: 40px;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 }
