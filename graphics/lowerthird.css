@@ -29,18 +29,27 @@ body {
 	padding: 0 15px 0 15px;
 	overflow: hidden;
 	white-space: nowrap;
+	z-index: 3;
 	
 }
 
+.orangebar {
+	height: 5px;
+	
+	z-index: 10;
+	margin-left: 16px;
+}
 
 #name {
 	
 	font-size: 75px;
 	letter-spacing: 1px;
 	font-weight: bold;
+	z-index: 1;
 }
 
 #twitter {
 	font-size: 40px;
 	letter-spacing: 1px;
+	margin-left: 2px;
 }
