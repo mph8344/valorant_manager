@@ -40,7 +40,7 @@ nodecg.listenFor('hideLowerThird', () => {
 		twitterEl.innerHTML = "";
 	})
 	tl.set([nameEl, twitterEl ], { borderBottom: "" })
-	tl.set([nameplateEl, nameEl, twitterEl, orangeBar], { width: "" })
+	tl.set([nameplateEl, nameEl, twitterEl, orangeBar], { width: "0px" })
 
 
 })
